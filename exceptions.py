@@ -1,0 +1,3 @@
+class NoteNotFound(LookupError):
+    pass
+
