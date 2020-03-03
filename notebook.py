@@ -15,6 +15,7 @@ class Notebook:
         self.notes.append(Note(memo, tags))
 
     def _find_note(self, note_id):
+        """For internal use only. Finds the note user requested for"""
         for note in self.notes:
             if str(note.id) == str(note_id):
                 return note
